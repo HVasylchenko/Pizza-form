@@ -15,7 +15,7 @@ const MyForm = () => {
       <h1>Pizza Form</h1>
       <Form
         onSubmit={onSubmit}
-        initialValues={{ stooge: "larry", employed: false }}
+        initialValues={{ manager: "", first_order: false }}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit}>
             <div>
@@ -109,7 +109,7 @@ const MyForm = () => {
                     name="manager"
                     component="input"
                     type="radio"
-                    value="larry"
+                    value="Serg"
                   />{" "}
                   Serg
                 </label>
@@ -118,7 +118,7 @@ const MyForm = () => {
                     name="manager"
                     component="input"
                     type="radio"
-                    value="moe"
+                    value="Ivan"
                   />{" "}
                   Ivan
                 </label>
@@ -127,7 +127,7 @@ const MyForm = () => {
                     name="manager"
                     component="input"
                     type="radio"
-                    value="curly"
+                    value="Mary"
                   />{" "}
                   Mary
                 </label>
